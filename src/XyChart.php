@@ -10,9 +10,10 @@ namespace BeastBytes\Mermaid\XyChart;
 
 use BeastBytes\Mermaid\CommentTrait;
 use BeastBytes\Mermaid\Mermaid;
+use BeastBytes\Mermaid\MermaidInterface;
 use BeastBytes\Mermaid\TitleTrait;
 
-final class XyChart
+final class XyChart implements MermaidInterface, Stringable
 {
     use CommentTrait;
     use TitleTrait;
@@ -27,6 +28,11 @@ final class XyChart
         private readonly Orientation $orientation = Orientation::Horizontal
     )
     {
+    }
+
+    public function __toString(): string
+    {
+        return $this->render();
     }
 
     public function addDataset(ChartType $type, array $data): self
