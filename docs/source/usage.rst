@@ -9,7 +9,9 @@ both axes are optional with Mermaid calculating the ranges if they are not.
 
 Example
 -------
+
 .. code-block:: php
+
     Mermaid::create(XyChart::class)
         ->withTitle('Sales Revenue')
         ->withXAxis('1999', ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])

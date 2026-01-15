@@ -9,7 +9,7 @@ XyChart Class
 
         Render the Mermaid code enclosed in a <pre> tag
 
-        :param array<string, bool|int|string> $attributes: HTML attributes for the enclosing <pre> tag
+        :param array $attributes: HTML attributes for the enclosing <pre> tag
         :returns: Mermaid code enclosed in a <pre> tag
         :rtype: string
 
@@ -18,7 +18,7 @@ XyChart Class
         Add a dataset
 
         :param DatasetType $type: The dataset type (see :php:enum:`DatasetType`)
-        :param list<float|int> $data:
+        :param array $data: The dataset
         :returns: A new instance of ``XyChart`` with the dataset
         :rtype: XyChart
 
@@ -45,7 +45,7 @@ XyChart Class
         Define the chart X-axis
 
         :param ?string $title: The X-axis title
-        :param list<string>|int|null $min: Array of categories or minimum value
+        :param array|int|null $min: Array of categories or minimum value
         :param ?int $max: Maximum value; only used if $min is int
         :returns: A new instance of ``XyChart`` with the X-axis defined
         :rtype: XyChart
