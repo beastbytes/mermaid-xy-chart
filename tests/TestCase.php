@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace BeastBytes\Mermaid\XyChart\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

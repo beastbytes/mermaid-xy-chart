@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BeastBytes\Mermaid\XyChart;
 
-enum Orientation
+enum DatasetType
 {
-    case horizontal;
-    case vertical;
+    case bar;
+    case line;
 }
