@@ -17,7 +17,7 @@ XyChart Class
 
         Add a dataset
 
-        :param DatasetType $type: The dataset type (see :php:enum:`DatasetType`)
+        :param DatasetType $type: The dataset type
         :param array $data: The dataset
         :returns: A new instance of ``XyChart`` with the dataset
         :rtype: XyChart
@@ -36,7 +36,7 @@ XyChart Class
 
         The default chart orientation is :php:case:`Orientation::horizontal`
 
-        :param Orientation $orientation: The chart orientation (see :php:enum:`Orientation`)
+        :param Orientation $orientation: The chart orientation
         :returns: A new instance of ``XyChart`` with the orientation set
         :rtype: XyChart
 
