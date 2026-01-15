@@ -2,7 +2,7 @@ Usage
 =====
 
 XY Chart allows drawing charts that have X and Y axes.
-Currently, bar and line charts are supported; additional chart types may be supported by Mermaid in the future.
+Currently, *bar* and *line* charts are supported; additional chart types may be supported by Mermaid in the future.
 
 The X-axis, if defined, can be either categories or values; the Y-axis is always a value range if defined;
 both axes are optional with Mermaid calculating the ranges if they are not.
