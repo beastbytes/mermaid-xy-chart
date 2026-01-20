@@ -18,9 +18,9 @@ test('chart', function () {
         ->toBe(<<<EXPECTED
 <pre class="mermaid">
 xychart horizontal
-  title &quot;Sales Revenue&quot;
-  x-axis [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, &quot;Dec (12)&quot;]
-  y-axis &quot;Revenue (in $)&quot; 4000 --&gt; 11000
+  title "Sales Revenue"
+  x-axis [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, "Dec (12)"]
+  y-axis "Revenue (in $)" 4000 --> 11000
   bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
   line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
 </pre>
