@@ -10,9 +10,12 @@ both axes are optional with Mermaid calculating the ranges if they are not.
 Example
 -------
 
+PHP
++++
+
 .. code-block:: php
 
-    Mermaid::create(XyChart::class)
+    echo Mermaid::create(XyChart::class)
         ->withTitle('Sales Revenue')
         ->withXAxis('1999', ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
         ->withYAxis('Revenue (in $)', 4000, 11000)
@@ -20,3 +23,27 @@ Example
         ->addDataset(DatasetType::line, [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000])
         ->render()
     ;
+
+Generated Mermaid
++++++++++++++++++
+
+::
+
+    xychart horizontal
+      title "Sales Revenue"
+      x-axis "1999" [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+      y-axis "Revenue (in $)" 4000 --> 11000
+      bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+      line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+
+Mermaid Diagram
++++++++++++++++
+
+.. mermaid::
+
+    xychart horizontal
+      title "Sales Revenue"
+      x-axis "1999" [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+      y-axis "Revenue (in $)" 4000 --> 11000
+      bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+      line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]

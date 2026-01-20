@@ -4,7 +4,7 @@
 Mermaid XY Chart
 =================
 
-Mermaid XY Chart allows creation of `Mermaid XY Charts <https://mermaid.js.org/syntax/xyChart.html>`__ in PHP.
+Mermaid XY Chart allows creation of `Mermaid JS XY Charts <https://mermaid.js.org/syntax/xyChart.html>`__ in PHP.
 
 .. toctree::
    :maxdepth: 2
@@ -16,5 +16,8 @@ Mermaid XY Chart allows creation of `Mermaid XY Charts <https://mermaid.js.org/s
 
 .. seealso::
 
-  `Mermaid documentation <https://beastbytes.github.io/mermaid>`__
-  
+    `Mermaid documentation <https://beastbytes.github.io/mermaid>`__
+
+    `Mermaid JS <https://mermaid.js.org>`__
+
+    `Mermaid JS XY Charts <https://mermaid.js.org/syntax/xyChart.html>`__
