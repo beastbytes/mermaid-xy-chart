@@ -26,7 +26,7 @@ final class XyChart extends Diagram
     private const string Y_AXIS = 'y-axis';
 
     private array $datasets = [];
-    private Orientation $orientation = Orientation::horizontal;
+    private Orientation $orientation = Orientation::vertical;
     private string $xAxis = '';
     private string $yAxis = '';
 

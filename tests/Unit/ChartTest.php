@@ -9,7 +9,7 @@ use BeastBytes\Mermaid\XyChart\XyChart;
 test('chart', function () {
     expect(Mermaid::create(XyChart::class)
         ->withTitle('Sales Revenue')
-        ->withXAxis(null, ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec (12)'])
+        ->withXAxis('1999', ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec (12)'])
         ->withYAxis('Revenue (in $)', 4000, 11000)
         ->addDataset(DatasetType::bar, [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000])
         ->addDataset(DatasetType::line, [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000])
@@ -17,9 +17,9 @@ test('chart', function () {
     )
         ->toBe(<<<EXPECTED
 <pre class="mermaid">
-xychart horizontal
+xychart vertical
   title "Sales Revenue"
-  x-axis [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, "Dec (12)"]
+  x-axis "1999" [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, "Dec (12)"]
   y-axis "Revenue (in $)" 4000 --> 11000
   bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
   line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]

@@ -34,7 +34,7 @@ XyChart Class
 
         Set the chart orientation
 
-        The default chart orientation is :php:case:`Orientation::horizontal`
+        The default chart orientation is :php:case:`Orientation::vertical`
 
         :param Orientation $orientation: The chart orientation
         :returns: A new instance of ``XyChart`` with the orientation set

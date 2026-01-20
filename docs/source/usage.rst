@@ -29,7 +29,7 @@ Generated Mermaid
 
 ::
 
-    xychart horizontal
+    xychart vertical
       title "Sales Revenue"
       x-axis "1999" [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
       y-axis "Revenue (in $)" 4000 --> 11000
@@ -41,7 +41,7 @@ Mermaid Diagram
 
 .. mermaid::
 
-    xychart horizontal
+    xychart vertical
       title "Sales Revenue"
       x-axis "1999" [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
       y-axis "Revenue (in $)" 4000 --> 11000
