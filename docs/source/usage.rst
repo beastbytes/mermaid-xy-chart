@@ -27,7 +27,7 @@ PHP
 Generated Mermaid
 +++++++++++++++++
 
-::
+.. code-block:: html
 
     xychart vertical
       title "Sales Revenue"
