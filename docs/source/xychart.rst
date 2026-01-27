@@ -22,6 +22,17 @@ XyChart Class
         :returns: A new instance of ``XyChart`` with the dataset
         :rtype: XyChart
 
+    .. php:method:: render(array $attributes = [])
+
+        Renders the diagram
+
+        :param array $attributes: HTML attributes for the <pre> tag as name=>value pairs
+
+            .. note:: The *mermaid* class is added
+
+        :returns: Mermaid diagram code in a <pre> tag
+        :rtype: string
+
     .. php:method:: withTitle(string $title)
 
         Set the chart title
